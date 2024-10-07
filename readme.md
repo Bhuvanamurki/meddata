@@ -49,7 +49,7 @@ The dataset contains the following columns:
 
 ## SQL Queries and Analysis
 
-### 1. Data Overview & Basic Statistics
+### 1. Overview of Patient Data & Key Statistics
 
 These queries provide a high-level view of the dataset, including record counts and patient demographics.
 
@@ -69,7 +69,7 @@ SELECT Blood_Type, COUNT(*) AS total_by_blood_type FROM healthcare_data GROUP BY
 
 ---
 
-### 2. Medical Conditions & Medications
+### 2. Analysis of Medical Conditions & Prescribed Medications
 
 These queries explore the most frequent medical conditions and medications prescribed to patients.
 
@@ -94,7 +94,7 @@ GROUP BY Medical_Condition, Medication;
 
 ---
 
-### 3. Insurance Providers & Hospitals
+### 3. Insurance Providers & Hospital Preferences
 
 This section analyzes patient preferences for insurance providers and hospitals.
 
@@ -119,7 +119,7 @@ ORDER BY provider_count DESC;
 
 ---
 
-### 4. Financial Analysis & Duration of Hospitalization
+### 4. Financial Insights & Hospitalization Duration Analysis
 
 Here, we explore the financial aspect and calculate the length of hospital stays.
 
@@ -141,7 +141,7 @@ FROM healthcare_data;
 
 ---
 
-### 5. Blood Type Analysis & Donation Matching
+### 5. Blood Type Distribution & Donor Matching
 
 This query explores the distribution of blood types and matches donors with recipients.
 
@@ -163,7 +163,7 @@ END;
 
 ---
 
-### 6. Yearly Admissions & Insurance Analysis
+### 6. Annual Admission Trends & Insurance Billing Patterns
 
 We analyze hospital admissions over specific years and examine insurance billing patterns.
 
@@ -182,7 +182,7 @@ GROUP BY Insurance_Provider;
 
 ---
 
-### 7. Patient Risk Categorization
+### 7. Categorization of Patient Risk Levels
 
 Categorize patients into risk groups based on their medical conditions and test results.
 
